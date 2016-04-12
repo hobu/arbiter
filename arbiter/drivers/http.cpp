@@ -88,8 +88,8 @@ namespace
 
     const bool followRedirect(true);
 
-    const auto baseSleepTime(std::chrono::milliseconds(1));
-    const auto maxSleepTime (std::chrono::milliseconds(4096));
+//     const auto baseSleepTime(std::chrono::milliseconds(1));
+//     const auto maxSleepTime (std::chrono::milliseconds(4096));
 
     const std::size_t defaultHttpTimeout(60 * 5);
 

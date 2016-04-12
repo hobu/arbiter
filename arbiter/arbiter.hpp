@@ -14,6 +14,7 @@
 #include <arbiter/drivers/http.hpp>
 #include <arbiter/drivers/s3.hpp>
 #include <arbiter/drivers/dropbox.hpp>
+#include <arbiter/drivers/gdrive.hpp>
 #include <arbiter/third/json/json.hpp>
 #endif
 

@@ -46,6 +46,9 @@ void Arbiter::init(const Json::Value& json)
 
     auto dropbox(Dropbox::create(m_pool, json["dropbox"]));
     if (dropbox) m_drivers["dropbox"] = std::move(dropbox);
+
+    auto gdrive(GDrive::create(m_pool, json["gdrive"]));
+    if (gdrive) m_drivers["gdrive"] = std::move(gdrive);
 }
 
 void Arbiter::addDriver(const std::string type, std::unique_ptr<Driver> driver)
